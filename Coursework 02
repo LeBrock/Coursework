@@ -1,0 +1,211 @@
+1.A. 
+
+   /**
+    * Prompts the user for a number of dance moves in the range 1 to 3 inclusive. 
+    * If the number that the user entered is within the range of 1 to 3 inclusive, it will return the number. 
+    * If the number is not within this range or if the user entered something other than an number the method will set the number of dance moves 
+    * to 0, and ask the user to enter a numer of dance moves. 
+    */
+   public int promptForNumOfMoves()
+   {
+      int moves = 0; 
+   while (! isValidNumOfMoves(moves));
+   {
+    try 
+    {
+      moves = Integer.parseInt(OUDialog.request
+         ("Please enter the number of dance moves to be performed - between 1 and 3 (inclusive)"));
+    }
+    catch (NumberFormatException e) 
+    {
+      moves = 0;
+    }
+  } 
+ return moves;
+}
+
+
+1.B. 
+
+/**
+ * This method sets the number of Frogs Dancing to 0, as well as setting the three frogs used as arguments for the FrogDanceCoordination 
+ * to the colour of green. 
+ * It then prompt the user if they would like each of the frogs to dance one by one. 
+ * If you user clicks yes it sets their colour to Red, Position to 1 and increases the number of Frogs dancing by one. 
+*/
+public void selectDancingFrogs() 
+{
+   numOfFrogsDancing = 0; 
+   frog1.setColour(OUColour.GREEN); 
+   frog2.setColour(OUColour.GREEN); 
+   frog3.setColour(OUColour.GREEN); 
+   boolean frog1awnser = OUDialog.confirm("Would you like frog1 to dance"); 
+   if ( frog1awnser == true) 
+      {
+         frog1.setColour(OUColour.RED) ;
+         frog1.setPosition(1);
+         numOfFrogsDancing ++; 
+      }
+   else 
+      {
+         frog1.setColour(OUColour.GREEN); 
+      }
+   boolean frog2awnser = OUDialog.confirm("Would you like frog2 to dance"); 
+   if ( frog2awnser == true) 
+      {
+         frog2.setColour(OUColour.RED) ;
+         frog2.setPosition(1);
+         numOfFrogsDancing ++; 
+      }
+   else 
+      {
+         frog2.setColour(OUColour.GREEN); 
+      }
+   boolean frog3awnser = OUDialog.confirm("Would you like frog3 to dance");
+   if ( frog3awnser == true) 
+      {
+         frog3.setColour(OUColour.RED) ;
+         frog3.setPosition(1);
+         numOfFrogsDancing ++; 
+      }
+   else 
+      {
+         frog3.setColour(OUColour.GREEN); 
+      }
+}
+
+
+1.C. 
+
+/**
+    * This method asks the user to type the number of dance moves that they want to be performed. 
+    * It will keep asking the user to input a number until the user enters a valid number. 
+    * This then calls the method prompForDanceMove. 
+    * If the number of dancemoves is greater than 1 the user is requested to enter the name of danceMove2. 
+    * If the number of danceMoves is greater than 2 the user is requested to enter the name of danceMove3. 
+    */
+   public void createDance()
+   {
+   int input = 0; 
+  while (! isValidNumOfMoves(input))
+    try 
+    {
+     input = Integer.parseInt(OUDialog.request
+         ("Please enter the number of dance moves to be performed"));
+    }
+    catch (NumberFormatException e) 
+    {
+      input = 0;
+    }
+   numOfDanceMoves = input; 
+   if (numOfDanceMoves > 1)
+   {
+      try 
+      {
+      danceMove1 = OUDialog.request("Please enter type of dance move - flip or slide");     
+      while (!this.isValidMove(danceMove2))
+      {
+         OUDialog.alert("This is not a valid type of move");
+         danceMove1 = OUDialog.request
+         ("Please enter type of dance move - \"flip\" or \"slide\" for danceMove1");
+      }
+      }
+      catch (NullPointerException e)
+      {
+      }
+   }
+   if (numOfDanceMoves > 1)
+   {
+      try 
+      {
+      danceMove2 = OUDialog.request("Please enter type of dance move - flip or slide");     
+      while (!this.isValidMove(danceMove2))
+      {
+         OUDialog.alert("This is not a valid type of move");
+         danceMove2 = OUDialog.request
+         ("Please enter type of dance move - \"flip\" or \"slide\" for danceMove2");
+      }
+      }
+      catch (NullPointerException e)
+      {
+      }
+   }   
+ 
+   if (numOfDanceMoves > 2)
+   {
+      try 
+      {
+      danceMove3 = OUDialog.request("Please enter type of dance move - flip or slide");     
+      while (!this.isValidMove(danceMove2))
+      {
+         OUDialog.alert("This is not a valid type of move");
+         danceMove3 = OUDialog.request
+         ("Please enter type of dance move - \"flip\" or \"slide\" for danceMove");
+      }
+      }
+      catch (NullPointerException e)
+      {
+      }
+   }   
+   }
+
+1.D. ii 
+
+   /**
+    * This methods calls the method selectDancingFrogs and then createDance. 
+    */
+   public void setUpDance()
+   {
+      selectDancingFrogs(); 
+      createDance(); 
+   }
+
+
+1.D. ii 
+
+/**
+    * This method checks to see if the number of dancing frogs is 1 or more, and if it is it tells all of the frogs to perform danceMove 1. 
+    * The method then checks to see if the number of dancing frogs is 1 or more and if it is, it tells all of the dancing frogs to perform danceMove2. 
+    * Then the method checks to see if the number of dancing frogs is 2 or more and if it is, it tell all of the dancing frogs to perfrom danceMove3. 
+    */
+   public void performDance() 
+   {
+      if (numOfFrogsDancing >= 1) 
+      {
+         {
+         if (danceMove1.equals("flip") ) 
+         flipDancingFrogs(); 
+         }
+         {
+         if (danceMove1.equals("slide")) 
+         slideDancingFrogs();
+         }
+            if (numOfFrogsDancing > 1) 
+            {
+            {
+               if (danceMove2.equals("flip") ) 
+               flipDancingFrogs(); 
+            }
+            {
+         if (danceMove2.equals("slide")) 
+         slideDancingFrogs();
+         }
+         } 
+         if (numOfFrogsDancing >2) 
+         {
+         {
+         if (danceMove3.equals("flip") ) 
+         flipDancingFrogs(); 
+         }
+         {
+         if (danceMove3.equals("slide")) 
+         slideDancingFrogs();
+         }
+         }
+      }
+   }
+
+
+
+
+

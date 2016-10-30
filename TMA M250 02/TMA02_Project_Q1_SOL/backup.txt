@@ -1,0 +1,6 @@
+Frog q = new Frog(); 
+Frog w = new Frog(); 
+Frog e = new Frog(); 
+FrogDanceCoordinator a = new FrogDanceCoordinator(q,w,e);
+a.setUpDance();
+a.performDance();

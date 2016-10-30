@@ -1,0 +1,9 @@
+MovieLibary test = new MovieLibary();
+test.printMap();
+test.printMapValue("Robin Hood");
+test.addMapEntry("300", "some guy" "random guy");
+Dave Jones (dave@waveform.org.uk)
+Set<String> actors = new HashSet<>();
+actors.add("Someone famous");
+actors.add("Someone else famous");
+test.addMapEntry("Explosions 2", actors);

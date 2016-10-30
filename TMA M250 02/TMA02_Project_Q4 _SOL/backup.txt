@@ -1,0 +1,5 @@
+WCCR rally = new WCCR(); 
+rally.readInEntrants();
+rally.runRally();
+rally.sortEntranceList(); 
+rally.categorise();

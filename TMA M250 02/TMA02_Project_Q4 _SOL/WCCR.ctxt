@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=WCCR()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ WCCR\r\n
+comment1.params=
+comment1.target=void\ readInEntrants()
+comment1.text=\r\n\ 4.B.ii\ \r\n
+comment2.params=
+comment2.target=double\ generateTime()
+comment2.text=\r\n\ 4.B.iii\r\n
+comment3.params=
+comment3.target=void\ runRally()
+comment3.text=\r\n\ 4.B.iv\ \r\n
+comment4.params=
+comment4.target=void\ sortEntranceList()
+comment4.text=\r\n\ 4.C.ii\r\n
+comment5.params=
+comment5.target=void\ categorise()
+comment5.text=\r\n\ 4.C.iii\ \r\n
+numComments=6

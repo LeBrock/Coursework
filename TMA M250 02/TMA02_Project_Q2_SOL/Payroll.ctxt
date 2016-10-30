@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Payroll()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Payroll\r\n
+comment1.params=aString
+comment1.target=void\ enrollEmployee(java.lang.String)
+comment1.text=\r\n\ 2.A.ii\r\n\ This\ method\ creates\ a\ new\ instance\ of\ Employee.\ \r\n\ The\ string\ argument\ is\ used\ as\ the\ employeeNumber\ for\ the\ new\ instance.\ \r\n\ It\ takes\ a\ String\ as\ an\ argument,\ and\ does\ not\ return\ anything.\ \r\n
+comment2.params=
+comment2.target=void\ printEmployees()
+comment2.text=\ \r\n\ 2.A.iii\r\n\ This\ method\ prints\ out\ each\ employee's\ record\ on\ is\ own\ individual\ line.\ \r\n\ It\ uses\ the\ format\ First\ Name,\ Second\ Name,\ Employee\ Name,\ "Sales",\ Sales\ figure.\ \r\n\ It\ does\ not\ take\ an\ argument,\ and\ does\ not\ return\ anything.\ \r\n
+comment3.params=m
+comment3.target=void\ updateSalesFigures(java.util.Map)
+comment3.text=\r\n\ 2.B\r\n\ This\ method\ iterated\ though\ the\ set\ of\ employees\ against\ the\ employees\ in\ the\ Map.\ \r\n\ If\ the\ employee\ appears\ in\ both,\ it\ will\ update\ their\ sales\ figures\ to\ be\ the\ total\ of\ the\ two\ figures,\ from\ the\ set\ of\ employees\ and\ the\ map.\ \r\n\ It\ takes\ a\ map\ whose\ keys\ are\ strings\ and\ values\ are\ Integers\ as\ an\ argument,\ and\ does\ not\ return\ anythng.\ \r\n
+comment4.params=
+comment4.target=void\ nameEmployees()
+comment4.text=\r\n\ 2.C.ii\r\n\ This\ method\ iterates\ through\ the\ set\ of\ employees\ and\ determines\ if\ both\ their\ First\ and\ Second\ names\ are\ assigned\ to\ the\ value\ null.\ \r\n\ If\ they\ are,\ it\ prompts\ the\ user\ to\ enter\ a\ new\ first\ and\ second\ name\ of\ the\ employee.\ \r\n\ The\ string\ the\ user\ entered\ is\ then\ split\ at\ the\ space\ and\ the\ first\ half\ is\ assigned\ to\ the\ employees\ first\ name.\ \r\n\ The\ second\ half\ is\ assigned\ to\ the\ employees\ second\ name.\ \r\n\ If\ the\ user\ clicked\ cancel\ as\ opposed\ to\ entering\ a\ string,\ the\ loop\ continues\ to\ the\ next\ relevant\ value.\ \r\n\ It\ does\ not\ take\ an\ argument,\ and\ does\ not\ return\ anything.\ \r\n
+numComments=5

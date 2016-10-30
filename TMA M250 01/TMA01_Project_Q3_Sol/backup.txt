@@ -1,0 +1,4 @@
+Book aBook = new Book(5, 10, "How to code");
+Bookshelf aBookshelf = new Bookshelf(10, 100, 0);
+aBook.toString();
+aBookshelf.toString();

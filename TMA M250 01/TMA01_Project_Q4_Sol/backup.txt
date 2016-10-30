@@ -1,0 +1,2 @@
+RestrictedHoverFrog frank = new RestrictedHoverFrog();
+frank.exercise(5, false);

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=RestrictedHoverFrog()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ RestrictedHoverFrog\r\n\ Zero\ argument\ constructor\ \r\n
+comment1.params=a\ b
+comment1.target=RestrictedHoverFrog(int,\ int)
+comment1.text=\r\n\ Constructor\ for\ the\ RestrictedHoverFrog\ class\ that\ takes\ two\ arguments\ given\ as\ integers.\r\n\ \r\n\ The\ first\ integer\ represents\ the\ position\ and\ if\ it\ is\ between\ 0\ and\ 11\ (inclusive)\ it\ will\ set\ the\ \r\n\ RestrictedHoverFrog's\ position\ to\ the\ value\ of\ the\ interger.\ If\ the\ argument\ is\ not\ within\ this\ range\ it\ will\ \r\n\ set\ the\ RestrictedHoverFrog's\ position\ to\ that\ set\ by\ the\ constructor\ of\ the\ Frog\ class.\ \r\n\ \r\n\ The\ second\ integer\ represents\ the\ height\ and\ if\ it\ is\ between\ 0\ and\ 6\ (inclusive)\ it\ will\ set\ the\ \r\n\ RestrictedHoverFrog's\ height\ to\ the\ value\ of\ the\ interger.\ If\ the\ argument\ is\ not\ within\ the\ range\ it\ will\ set\ \r\n\ the\ RestructedHoverFrog's\ height\ to\ that\ set\ by\ the\ constructor\ of\ the\ Frog\ class.\ If\ the\ height\ of\ the\ frog\ is\ 0\ it\r\n\ will\ set\ the\ colour\ to\ Green,\ and\ it\ it\ is\ between\ 1-5\ (inclusive)\ it\ will\ set\ the\ colour\ to\ Red.\ \r\n
+comment2.params=aPosition
+comment2.target=void\ setPosition(int)
+comment2.text=\ \r\n\ A\ modifier\ method\ that\ overrides\ the\ setPosition\ method\ of\ its\ super\ class,\ and\ takes\ an\ integer\ as\ an\ argument.\ \r\n\ If\ the\ intgerer\ is\ between\ 1\ and\ 11\ (inclusive)\ it\ will\ set\ the\ RestrictedHoverFrog\ in\ that\ position.\ \r\n\ If\ the\ integer\ is\ not\ in\ the\ range,\ it\ will\ do\ nothing.\ \r\n
+comment3.params=aColour
+comment3.target=void\ setColour(ou.OUColour)
+comment3.text=\r\n\ A\ modifier\ method\ that\ overrides\ the\ setColour\ method\ its\ super\ class\ and\ does\ nothing.\ \r\n
+comment4.params=aHeight
+comment4.target=void\ setHeight(int)
+comment4.text=\r\n\ A\ modifier\ method\ that\ overrights\ the\ setHeight\ of\ its\ super\ class.\ \r\n\ It\ takes\ an\ interger\ as\ an\ argument.\ \r\n\ If\ the\ height\ is\ set\ to\ 0\ it\ will\ set\ the\ colour\ of\ the\ frog\ to\ Green,\ if\ the\ height\ is\ \r\n\ more\ than\ 0\ it\ will\ set\ the\ colour\ of\ the\ frog\ to\ Red.\ \r\n
+comment5.params=duration\ isStartingLeft
+comment5.target=void\ exercise(int,\ boolean)
+comment5.text=\r\nThis\ method\ calles\ the\ method\ from\ the\ interface\ Exercisable.\ \r\nIt\ takes\ two\ arguments\ and\ interger\ and\ a\ boolean\ value.\ \r\n\r\nIf\ the\ boolean\ value\ is\ true,\ the\ object\ moves\ left,\ right,\ right,\ left\ according\ to\ the\ interger\ value.\ \r\nIf\ the\ boolean\ value\ is\ false,\ the\ object\ moves\ \ right,\ left,\ left,\ right\ accorinding\ to\ the\ interger\ value.\ \r\n
+numComments=6

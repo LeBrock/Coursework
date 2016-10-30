@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=duration\ isStartingLeft
+comment0.target=void\ exercise(int,\ boolean)
+comment0.text=\r\n\ Takes\ two\ arguments\ an\ integer\ and\ a\ boolean\ value.\ \r\n\ \r\n\ The\ interger\ dictates\ how\ many\ times\ the\ exercises\ should\ be\ performed.\r\n\ \r\n\ If\ the\ boolean\ value\ is\ true\ the\ exercise\ should\ begin\ in\ a\ rightwards\ direction\ (right,\ right,\ left).\r\n\ If\ the\ boolean\ value\ is\ false\ the\ exercise\ should\ begin\ in\ leftwards\ direction,\ (left,\ left,\ right).\r\n
+numComments=1

@@ -1,0 +1,8 @@
+Multiplier test = new Multiplier();
+test.multiply(1,2);
+test.multiply(2,0);
+test.multiply(-1,3);
+
+test.printSign(1,2);
+test.printSign(2,0);
+test.printSign(-1,3);

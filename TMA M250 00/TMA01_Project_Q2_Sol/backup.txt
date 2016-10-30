@@ -1,0 +1,9 @@
+Square s1 = new Square();
+Square s2 = new Square();
+Square s3 = new Square();
+Square s4 = new Square();
+Circle c1 = new Circle();
+Circle c2 = new Circle();
+Circle c3 = new Circle();
+Train t = new Train(s1, s2, s3, s4, c1, c2, c3);
+t.run();

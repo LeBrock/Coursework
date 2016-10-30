@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Multiplier()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Multiplier.\ \r\n
+comment1.params=a\ b
+comment1.target=int\ multiply(int,\ int)
+comment1.text=\r\n\ Returns\ the\ value\ of\ multiplying\ two\ intergers,\ taken\ as\ arguments.\ \r\n
+comment2.params=a\ b
+comment2.target=void\ printSign(int,\ int)
+comment2.text=\r\n\ Caculates\ the\ value\ of\ multiplying\ two\ intergers,\ and\ prints\ out\ a\ statement\ relating\ to\ the\ value.\ \r\n\ If\ the\ product\ is\ a\ positive\ number,\ it\ prints\ out\ the\ message\ "The\ product\ is\ positive"\r\n\ If\ the\ product\ is\ zero,\ it\ prints\ out\ the\ message\ "The\ product\ is\ zero"\r\n\ If\ the\ product\ is\ a\ negative\ number,\ it\ prints\ out\ the\ message\ "The\ product\ is\ negative"\r\n
+numComments=3
